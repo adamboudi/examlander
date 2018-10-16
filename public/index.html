@@ -1,0 +1,60 @@
+<html class="shrine"><head><link rel="stylesheet" href="fs.css">
+  <link rel="stylesheet" href="ss.css">
+    <title>Exam Lander</title>
+    <meta name="description" content="Pesto - Adaptive UI Demo">
+    <meta name="viewport" content="width=device-width">
+
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,500,700,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <style type="text/css">
+        /**
+         * Hide when Angular is not yet loaded and initialized
+         */
+        [ng-cloak] {
+            display: none;
+        }
+        #grid {
+		margin: 0 auto;
+		max-width: 86%;
+		padding: 1em 0;
+		/* Grid Fallback */
+		display: flex;
+		flex-wrap: wrap;
+		/* Supports
+Grid */
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		grid-auto-rows: minmax(300px, auto);
+		grid-gap: 1em;
+	}
+
+        a {color:darkgray;}
+
+    </style>
+    </head>
+ 
+    <body class="ng-scope vp-desktop-large" view="homepage-view" id="body">
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://whatbrowser.org/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+   <base-view>
+      <!-- ngView: undefined --><ng-view class="ng-scope"><main-view class="ng-scope">
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <logo-container></logo-container>
+        <span flex="" class="flex"></span>
+    </div>
+  </md-toolbar>
+
+    <div id="grid">
+        <div id="root"></div>
+               </div>
+  <adaptive-controls>
+    <button class="md-fab main-fab md-button md-ink-ripple" type="button" aria-label="Edit" id="button">
+      <md-icon class="material-icons ng-scope ng-isolate-scope">search</md-icon>
+    </button>
+  </adaptive-controls>
+
+    </div></body></html>
